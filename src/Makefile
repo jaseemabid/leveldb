@@ -1,6 +1,5 @@
 hello:
-	g++ -v -I ../include -L ../out-shared -L ../out-static \
-    -llibleveldb -lmemcached hello.cc
+	g++ -I ../include -L ../out-shared -lleveldb hello.cc -o hello
 
 clean:
 	rm -f hello
